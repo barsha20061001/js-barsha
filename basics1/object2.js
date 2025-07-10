@@ -45,4 +45,19 @@ console.log(tinderuser.hasOwnProperty('isLogged'));
 // 5.To check property of object => Object.hasOwnProperty(key/value name);
 // 
 
-
+const course ={
+    coursename:"js in hindi",
+    price:"899",
+    courseInstructor:"abc"
+}
+const {courseInstructor} = course
+console.log(courseInstructor);
+//const navbar=({Company})=>{}
+//navbar(Company= "Barsha")
+// {
+    // "name" : "barsha",
+    // "coursename" : "barshacode",
+    // "price" : "free"
+// 
+// }
+// 
