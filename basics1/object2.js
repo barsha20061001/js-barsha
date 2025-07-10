@@ -35,5 +35,14 @@ console.log(Object.values(tinderuser))
 console.log(Object.entries(tinderuser))
 console.log(tinderuser.hasOwnProperty('isLogged'));
 
+// SUMMARY : 
+// 
+// 1.To declare singleton object => new Object( );
+// 2. To merge object use spread operartor. {...Obj1, ...Obj2 } or 
+// Object.assign( { }, obj1,obj2 ):
+// 3. To return keys from object => Object.keys(object name);
+// 4.To return values from object => Object.values(object name);
+// 5.To check property of object => Object.hasOwnProperty(key/value name);
+// 
 
 
