@@ -28,8 +28,24 @@ const chai= () => {
  //   return num1+num2
 //}
 //const addTwo=(num1,num2) =>  (num1+num2)
-const addTwo=(num1,num2) =>  ({username:"barsha"})
+const addTwo=(_num1,_num2) =>  ({username:"barsha"})
 console.log(addTwo(3,4))  
 
 // const myArray =[3,4,5,6,7]
 //myArray.forEach()
+
+
+//********************************IIFE */
+;(function chai(){ // NAMED IFFE
+console.log(`DB connected`);
+})();
+( (name) => {  // unnamed iife
+    console.log(`DB CONNECTED TO ${name}`);
+}) ('maya')
+
+
+// 1. IIFE is a function which immediately executes after it's creation . It is wriiten as one parentheses for wrapping the function and other for execution ()();
+// 2. Variables defined inside an IIFE are not accessible from outside its scope which helps to avoid conflicts with other variables or functions (global scope pollution). Means IIFE keeps variables and functions private in it.
+// 3. IIFE written with function name is named IIFE and not with name are unnamed/anonymous. 
+// 4.We can use parameter inside first parentheses.
+// 5. To write two or multiple IIFE one should be end with semicolon ;
